@@ -1,0 +1,17 @@
+default: &default
+  adapter: redis
+
+development:
+  <<: *default
+  url: <%= ENV.fetch("SOLOVERSITY_REDIS_URL_DEVELOPMENT") { "redis://redis:6379/1" } %>
+  channel_prefix: soloversity_development
+
+test:
+  <<: *default
+  url: <%= ENV.fetch("SOLOVERSITY_REDIS_URL_TEST") { "redis://redis:6379/1" } %>
+  channel_prefix: soloversity_test
+
+production:
+  <<: *default
+  url: <%= ENV.fetch("SOLOVERSITY_REDIS_URL_PRODUCTION") { "redis://redis:6379/1" } %>
+  channel_prefix: soloversity_production

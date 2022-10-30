@@ -23,6 +23,9 @@ RUN apk update && \
         curl-dev && \
     apk del build-packs
 
+RUN apk add --no-cache gcompat
+#nokogiriで詰まったので入れました。
+
 COPY api/Gemfile ${ROOT}
 COPY api/Gemfile.lock ${ROOT}
 

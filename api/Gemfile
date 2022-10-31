@@ -43,3 +43,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "net-smtp"
 gem "net-pop"
 gem "net-imap"
+
+# トークンベースの認証を行うためのgem
+gem 'devise'
+gem 'devise_token_auth'

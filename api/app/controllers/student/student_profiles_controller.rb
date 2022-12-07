@@ -16,7 +16,7 @@ class Student::StudentProfilesController < ApplicationController
   private
 
   def set_student_profile
-    @student_profile = StudentProfile.find(paramas[:id])
+    @student_profile = StudentProfile.find(params[:id])
   end
 
   def student_profile_params

@@ -18,7 +18,7 @@
 ### ライブラリインストール
 ```bash
 docker compose run --rm api bundle install
-docker compose run --rm web yarn instll
+docker compose run --rm web yarn install
 ```
 
 ### 起動手順

@@ -13,7 +13,9 @@ const Header = () => {
         <div className="p-4">ABOUT</div>
         <div className="p-4">Public BBS</div>
         <div className="p-4">University BBS</div>
-        <div className="p-4">Registration</div>
+        <Link href="/student/sign_up">
+          <a className="p-4">SignUp</a>
+        </Link>
         <Link href="/student/sign_in">
           <a>SignIn</a>
         </Link>

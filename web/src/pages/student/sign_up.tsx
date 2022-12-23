@@ -19,11 +19,7 @@ const SignUp = () => {
 
   const signUp = async () => {
     await axios.post("http://localhost:3000/student", {
-      registration: {
-        email: student.email,
-        password: student.password,
-        password_confirmation: student.password_confirmation,
-      },
+      registration: student,
     });
   };
   return (

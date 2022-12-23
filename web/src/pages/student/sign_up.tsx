@@ -6,7 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { StudentSignUp } from "types/student";
 
-const StudentLogin = () => {
+const SignUp = () => {
   const initialStudent: StudentSignUp = {
     email: "",
     password: "",
@@ -84,4 +84,4 @@ const StudentLogin = () => {
     </>
   );
 };
-export default StudentLogin;
+export default SignUp;
